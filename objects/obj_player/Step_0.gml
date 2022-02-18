@@ -14,14 +14,14 @@ vsp = vsp + grv;
 if(place_meeting(x,y+1,obj_wall)){
 	
 	on_floor = true;
-	
+//jump	
 	if(key_jump){
 		vsp = -5;
 	}
 } else {
 	
 	on_floor = false;
-	
+//fall	
 	if (key_fall){
 		vsp += 5;
 	}
