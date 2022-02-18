@@ -1,7 +1,9 @@
 //detect inputs
-key_left = keyboard_check(vk_left) or keyboard_check(ord("A"));
-key_right = keyboard_check(vk_right)or keyboard_check(ord("D"));
-key_jump = keyboard_check_pressed(vk_space) or keyboard_check(ord("W")) or keyboard_check_pressed(vk_up);
+key_left = keyboard_check(vk_left);
+key_right = keyboard_check(vk_right);
+key_jump = keyboard_check_pressed(vk_up);
+key_fall = keyboard_check_pressed(vk_down);
+key_down = keyboard_check(vk_down);
 
 var move = key_right - key_left;
 
@@ -14,10 +16,16 @@ if(place_meeting(x,y+1,obj_wall)){
 	on_floor = true;
 	
 	if(key_jump){
-		vsp = -6;
+		vsp = -5;
 	}
 } else {
+	
 	on_floor = false;
+	
+	if (key_fall){
+		vsp += 5;
+	}
+	
 }
 
 //horizontal collision

@@ -1,5 +1,7 @@
 {
   "resources": [
+    {"id":{"name":"spr_bounce","path":"sprites/spr_bounce/spr_bounce.yy",},"order":5,},
+    {"id":{"name":"obj_bounce","path":"objects/obj_bounce/obj_bounce.yy",},"order":2,},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"order":1,},
     {"id":{"name":"spr_player_run","path":"sprites/spr_player_run/spr_player_run.yy",},"order":2,},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":0,},
