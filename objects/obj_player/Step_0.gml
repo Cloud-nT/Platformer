@@ -54,13 +54,7 @@ y = y + vsp;
 
 //animation
 if(on_floor == false){
-	if(sign(vsp) > 0){
-		sprite_index = spr_player_fall;
-		image_speed = 1;
-	} else {
-		sprite_index = spr_player_jump;
-		image_speed = 0;
-	}
+	sprite_index = spr_player_air;	
 } else {
 	if( hsp == 0){
 		sprite_index = spr_player;
