@@ -3,8 +3,10 @@ y = obj_player.y;
 
 firing_delay = firing_delay - 1;
 if(mouse_check_button(mb_left)) and (firing_delay < 0){
-	firing_delay = 0;
-	with(instance_create_layer(x,y,"Bullets",obj_bullet)){
-		
+	firing_delay = 15;
+	with(instance_create_layer(x,y,"Bullets",obj_boomerang)){
+		speed = 7;
+		direction = other.image_angle;
+		image_angle = direction;
 	}
 }
