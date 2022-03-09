@@ -1,8 +1,9 @@
 speed -= 0.1;
 image_angle += 5;
 
-if(x < 0) or (x > 736) or (y < 0 ) or (y > 640){
-	if(speed < -9){
+if(speed < 0){
+	direction = point_direction(x,y,obj_player.x,obj_player.y) - 180;
+	if(place_meeting(x,y,obj_player)){
 		instance_destroy();
 	}
 }

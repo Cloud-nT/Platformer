@@ -1,4 +1,4 @@
-if(isDead == 3){
+if(isDead >= 5){
 	instance_destroy();
 }
 
@@ -19,5 +19,9 @@ x += enemySpd;
 
 if(place_meeting(x,y,obj_boomerang)){
 	sprite_index = spr_enemy_dead;
+	isDead += 1;
+}
+
+if(isDead > 0){
 	isDead += 1;
 }
