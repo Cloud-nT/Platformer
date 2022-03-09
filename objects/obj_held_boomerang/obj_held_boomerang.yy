@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_gub",
-    "path": "sprites/spr_gub/spr_gub.yy",
+    "name": "spr_boomerang",
+    "path": "sprites/spr_boomerang/spr_boomerang.yy",
   },
   "solid": false,
   "visible": true,
@@ -32,7 +32,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_gub",
+  "name": "obj_held_boomerang",
   "tags": [],
   "resourceType": "GMObject",
 }

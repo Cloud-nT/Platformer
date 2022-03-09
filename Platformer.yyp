@@ -2,10 +2,9 @@
   "resources": [
     {"id":{"name":"spr_bounce","path":"sprites/spr_bounce/spr_bounce.yy",},"order":5,},
     {"id":{"name":"obj_bounce","path":"objects/obj_bounce/obj_bounce.yy",},"order":2,},
-    {"id":{"name":"obj_gub","path":"objects/obj_gub/obj_gub.yy",},"order":3,},
+    {"id":{"name":"obj_held_boomerang","path":"objects/obj_held_boomerang/obj_held_boomerang.yy",},"order":3,},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"order":5,},
     {"id":{"name":"spr_boomerang","path":"sprites/spr_boomerang/spr_boomerang.yy",},"order":7,},
-    {"id":{"name":"spr_gub","path":"sprites/spr_gub/spr_gub.yy",},"order":6,},
     {"id":{"name":"spr_enemy","path":"sprites/spr_enemy/spr_enemy.yy",},"order":8,},
     {"id":{"name":"spr_enemy_dead","path":"sprites/spr_enemy_dead/spr_enemy_dead.yy",},"order":9,},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"order":1,},

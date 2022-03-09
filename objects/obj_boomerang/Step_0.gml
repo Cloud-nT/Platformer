@@ -1,5 +1,5 @@
-speed -= 0.1;
-image_angle += 5;
+speed -= 0.2;
+image_angle += 10;
 
 if(speed < 0){
 	direction = point_direction(x,y,obj_player.x,obj_player.y) - 180;
