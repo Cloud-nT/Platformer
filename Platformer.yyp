@@ -12,8 +12,10 @@
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":0,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
     {"id":{"name":"spr_player_air","path":"sprites/spr_player_air/spr_player_air.yy",},"order":4,},
+    {"id":{"name":"obj_conveyor","path":"objects/obj_conveyor/obj_conveyor.yy",},"order":6,},
     {"id":{"name":"obj_boomerang","path":"objects/obj_boomerang/obj_boomerang.yy",},"order":4,},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},"order":1,},
+    {"id":{"name":"spr_conveyor","path":"sprites/spr_conveyor/spr_conveyor.yy",},"order":10,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [

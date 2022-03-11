@@ -1,7 +1,8 @@
 x = obj_player.x;
 y = obj_player.y;
 
-if(mouse_check_button_pressed(mb_left)) and (!instance_exists(obj_boomerang)){
+if(mouse_check_button(mb_left)){ 
+//and (!instance_exists(obj_boomerang)){
 	with(instance_create_layer(x,y,"Boomerang",obj_boomerang)){
 		speed = 12;
 		direction = other.image_angle;

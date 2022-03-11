@@ -11,7 +11,7 @@ hsp = move * walksp;
 
 vsp = vsp + grv;
 
-if(place_meeting(x,y+1,obj_wall)){
+if(place_meeting(x,y+1,obj_wall)) or (place_meeting(x,y+1,obj_conveyor)){
 	
 	on_floor = true;
 //jump	
@@ -38,7 +38,7 @@ if(place_meeting(x+hsp,y,obj_wall)){
 	hsp = 0;
 }
 
-x = x + hsp;
+
 
 //vertical collision
 if(place_meeting(x,y+vsp,obj_wall)){
@@ -49,9 +49,12 @@ if(place_meeting(x,y+vsp,obj_wall)){
 	
 	vsp = 0;
 }
-
+if(place_meeting(x,y+vsp,obj_conveyor)){
+	vsp = 0;
+	x -= 2;
+}
 y = y + vsp;
-
+x = x + hsp;
 //animation
 if(on_floor == false){
 	sprite_index = spr_player_air;	
@@ -66,4 +69,8 @@ if(on_floor == false){
 
 if(sign(hsp) != 0){
 	image_xscale = sign(hsp);
+}
+
+if(keyboard_check_pressed(ord("R"))){
+	game_restart();
 }
